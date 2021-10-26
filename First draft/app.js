@@ -5,16 +5,19 @@ const max = eightBall.length;
 
 const button = document.getElementById('askButton');
 const img = document.getElementById('image');
+const input = document.getElementById('question');
 
-button.addEventListener('click', () => {
-
+button.addEventListener('click', function ask() {
     const randomIndex = Math.floor(Math.random() * max);
     const randomBall = eightBall[randomIndex];
-    console.log(randomBall);
 
-    img.src = randomBall;
+    const newInput = input.value;
+    input.placeholder = newInput;
+    setTimeout(() => {
+        img.src = randomBall;
+    }, 2000);
 });
 
-
-
-// img.src =
+input.addEventListener('click', () => {
+    input.value = "";
+});

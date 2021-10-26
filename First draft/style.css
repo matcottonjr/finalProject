@@ -1,0 +1,32 @@
+body {
+    color: white;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100vh;
+    font-size: 1.5em;
+}
+
+button {
+    background: none;
+    color: white;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    margin: 2em;
+}
+
+button:hover {
+   border-color: rgb(13, 233, 233); 
+}
+
+input {
+    padding: 2px 2px;
+    font-size: 1em;
+}
+
+img {
+    width: 400px;
+}
