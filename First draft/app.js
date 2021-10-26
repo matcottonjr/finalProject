@@ -11,11 +11,13 @@ button.addEventListener('click', function ask() {
     const randomIndex = Math.floor(Math.random() * max);
     const randomBall = eightBall[randomIndex];
 
-    const newInput = input.value;
-    input.placeholder = newInput;
-    setTimeout(() => {
-        img.src = randomBall;
-    }, 2000);
+    if (input.value === "") { alert("WHAT IS YOUR QUESTION?") } else {
+        const newInput = input.value;
+        input.placeholder = newInput;
+        setTimeout(() => {
+            img.src = randomBall;
+        }, 2000);
+    }
 });
 
 input.addEventListener('click', () => {
