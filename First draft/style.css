@@ -7,6 +7,7 @@ body {
     flex-direction: column-reverse;
     height: 100vh;
     font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -16,6 +17,7 @@ button {
     padding: 1em 2em;
     font-size: 1em;
     margin: 2em;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover {
@@ -25,6 +27,7 @@ button:hover {
 input {
     padding: 2px 2px;
     font-size: 1em;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
